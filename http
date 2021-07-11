@@ -1,0 +1,87 @@
+<html>
+<body>
+<form action="b1.php" method="post">
+<div class="container">
+<input class="D" type="submit" onclick = "F()" value="forward" name="FORWARD"/><br/>
+<input class="A" type="submit" onclick = "L()" value="left" name="LEFT"/>
+<input class="B" type="submit" onclick = "S()" value="stop" name="STOP"/>
+<input class="C" type="submit" onclick = "R()" value="right" name="RIGHT"/><br/>
+<input class="E" type="submit" onclick = "B()" value="backward" name="BACKWARD"/>
+ 
+</form>
+
+<style>
+body {
+  background-color: #f0D1DB;
+  font-family: "Georgia";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 80vh;
+    justify-content: center;
+  align-content: center;
+  align-items: center;
+  }
+ 
+  .A,.B,.C{
+  flex: 1 1 auto;
+  padding: 20px;
+  margin: 10px;
+  font-size: 25px;
+  color: white;
+  background-color: inherit;
+  border: 3px solid white;
+  position: relative;
+  overflow:hidden;
+  transition: .3s;
+  
+  }
+ 
+  
+.A,.B,.C,.D,.E{
+    flex: 1 1 auto;
+  padding: 20px;
+  margin: 10px;
+  font-size: 25px;
+  
+  color: white;
+  background-color: inherit;
+  border: 3px solid white;
+  position: relative;
+  overflow:hidden;
+  transition: .3s;
+}
+.A:hover,.B:hover,.C:hover,.D:hover,.E:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.A:hover:after,.B:hover:after,.C:hover:after,.D:hover:after,.E:hover:after {
+  width: 0%;
+}
+</style>
+
+ <script type = "text/javascript">
+         
+            function F() {
+               alert("FORWARD")
+            }
+         function L() {
+               alert("LEFT")
+            }
+			 function R() {
+               alert("RIGHT")
+            }
+			 function S() {
+               alert("STOP")
+            }
+			 function B() {
+               alert("BACKWARD")
+            }
+			 
+      </script> 
+
+ </body>
+</html>
